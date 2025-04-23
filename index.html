@@ -7,11 +7,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body style="font-family: Raleway; font-size: large;">
 
 
-    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #373A3C;" >
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #373A3C"; data-bs-theme="dark";>
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" alt="Olivia Ros">
@@ -19,19 +22,16 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="text-align: right;">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="padding-right: 150px;">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#about">Acerca de mi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link active" href="#jobs">Trabajos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link active" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -40,25 +40,108 @@
 
 
 
-    <header class="text-end" style="height: auto;">
-        <div class="card text-bg-dark" style="border: none;">
-            <img src="assets/img/bg-hero.jpg" style="border-radius: 0; height: fit-content;">
-            <div class="card-img-overlay">
-              <h5 class="card-title">Comidas del fin del mundo</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vitae officiis facilis consectetur id natus ipsa est quam? Ipsam aperiam veniam sapiente natus deleniti esse repudiandae quibusdam harum eligendi sint?</p>
-              <div>
+    <header class="text-end text-light">
+        <div id="bgfoto">
+            <div id="order">
+                <div id="intro">
+                    <h1>Comidas del fin del mundo</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
+                </div>
+            </div>
+            <div id="introbuttons">
                 <button type="button" class="btn btn-outline-primary">Primary</button>
                 <button type="button" class="btn btn-primary">Primary</button>         
-              </div>
             </div>
         </div>
+
     </header>
 
 
-    <section>
+    <section id="about" class="text-center" style="padding: 8% 5%;">
         <h2>Acerca de mi</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus rem hic labore molestiae amet nobis et doloribus ratione saepe quibusdam ad odio, ipsa deserunt quod qui, suscipit, voluptatum nisi eligendi.</p>
+        <p style="max-width: 900px; display:inline-flex;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus. Nunc at enim et lacus porttitor tincidunt. Donec imperdiet augue nec aliquet sagittis.</p>
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-lg-3">
+              <div class="col my-4" style="margin: 0 auto;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50" width="40" viewBox="0 0 512 512"><path fill="#000000" d="M149.1 64.8L138.7 96 64 96C28.7 96 0 124.7 0 160L0 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-256c0-35.3-28.7-64-64-64l-74.7 0L362.9 64.8C356.4 45.2 338.1 32 317.4 32L194.6 32c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg>
+                <h3>Fotógrafa de comida</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+              </div>
+              <div class="col my-4" style="margin: 0 auto;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50" width="40" viewBox="0 0 512 512"><path fill="#000000" d="M480 32c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9L381.7 53c-48 48-113.1 75-181 75l-8.7 0-32 0-96 0c-35.3 0-64 28.7-64 64l0 96c0 35.3 28.7 64 64 64l0 128c0 17.7 14.3 32 32 32l64 0c17.7 0 32-14.3 32-32l0-128 8.7 0c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-147.6c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4L480 32zm-64 76.7L416 240l0 131.3C357.2 317.8 280.5 288 200.7 288l-8.7 0 0-96 8.7 0c79.8 0 156.5-29.8 215.3-83.3z"/></svg>
+                <h3>Crítica culinaria</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+              </div>
+              <div class="col my-4" style="margin: 0 auto;">
+                <svg xmlns="http://www.w3.org/2000/svg" height="50" width="40" viewBox="0 0 576 512"><path fill="#000000" d="M565.6 36.2C572.1 40.7 576 48.1 576 56l0 336c0 10-6.2 18.9-15.5 22.4l-168 64c-5.2 2-10.9 2.1-16.1 .3L192.5 417.5l-160 61c-7.4 2.8-15.7 1.8-22.2-2.7S0 463.9 0 456L0 120c0-10 6.1-18.9 15.5-22.4l168-64c5.2-2 10.9-2.1 16.1-.3L383.5 94.5l160-61c7.4-2.8 15.7-1.8 22.2 2.7zM48 136.5l0 284.6 120-45.7 0-284.6L48 136.5zM360 422.7l0-285.4-144-48 0 285.4 144 48zm48-1.5l120-45.7 0-284.6L408 136.5l0 284.6z"/></svg>
+                <h3>Bloggera de viajes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+              </div>
+            </div>
+        </div>
     </section>
+
+    <section id="jobs" class="text-center">
+        <h3 class="my-5">Mis trabajos</h3>
+        <div class="container text-center">
+            <div class="row row-cols-1 row-cols-lg-3">
+              <div class="col">
+                <div class="card h-100" style="margin: 0 auto;">
+                    <img src="assets/img/card-1.jpg" class="card-img-top" style="max-height: 295px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Asado en la Patagonia</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+                      <a href="#" class="btn btn-outline-info">Ver más</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card h-100" style="margin: 0 auto;">
+                    <img src="assets/img/card-2.jpg" class="card-img-top" style="max-height: 295px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Papas del fin del mundo</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+                      <a href="#" class="btn btn-outline-info">Ver más</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card h-100" style="margin: 0 auto;">
+                    <img src="assets/img/card-3.jpg" class="card-img-top" style="max-height: 295px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Salmones de Alaska</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a mauris id purus blandit dapibus.</p>
+                      <a id="boton" class="btn btn-outline-info";>Ver más</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section id="contact">
+        <form>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Nombre</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="Nombre"></textarea>
+              </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo electrónico">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aquí tu mensaje"></textarea>
+              </div>
+            <button type="submit" class="btn btn-info" style="background-color: #17A2B8; color: #ffffff;">Enviar</button>
+        </form>
+
+    </section>
+
+
+    <footer id="foot">
+        <p>Olivia Ros 2019. Todos los derechos reservados.</p>
+    </footer>
     
 </body>
 </html>

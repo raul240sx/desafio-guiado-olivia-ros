@@ -1,9 +1,60 @@
 
 
+body {
+    padding-top: 56px;
 
-foto {
-    background-image: url(../img/bg-hero.jpg);
+}
+
+
+
+#bgfoto {
+
+    background-image: url('../img/bg-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left; 
+    background-position: left;
+    height: 630px;
+    padding-left: 10%;
+    padding-right: 8%; 
+}
+
+#order {
+    display: flex;
+    justify-content: end;
+}
+
+#intro {
+    max-width: 650px;
+    padding-top: 150px;
+    padding-bottom: 15px;
+    color: #ffffff;
+
+
+}
+
+#introbuttons {
+ 
+
+    padding-bottom:30px;
+}
+
+#jobs {
+    background-color: #17A2B8;
+    padding-top: 8px;
+}
+
+#boton {
+    color: #17A2B8;
+}
+
+#contact {
+    padding: 25px 15px;
+}
+
+#foot {
+    color: #ffffff;
+    background-color: black;
+    height: 70px;
+    text-align: center;
+    padding-top: 22px;
 }
